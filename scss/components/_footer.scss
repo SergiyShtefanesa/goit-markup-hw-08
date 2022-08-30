@@ -1,0 +1,45 @@
+.footer__background {
+	background-color: #2f303a;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.footer {
+	display: flex;
+	align-items: baseline;
+}
+
+.contacts__group {
+	flex-grow: calc(1);
+}
+
+.footer-form {
+	margin-left: 93px;
+}
+
+.footer-text-title {
+	font-family: var(--primery-font);
+	font-weight: var(--bolt-font);
+	font-size: var(--primary-font-size);
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--light-color);
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.footer-form__input-email {
+	width: 358px;
+	padding: 15px 16px;
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	color: var(--light-color);
+}
+
+.footer-form_button--contained {
+	display: inline-flex;
+	align-items: center;
+}

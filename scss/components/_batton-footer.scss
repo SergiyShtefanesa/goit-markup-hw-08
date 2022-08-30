@@ -1,0 +1,26 @@
+.button--contained {
+	border-radius: 4px;
+	padding: 10px 32px;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 200px;
+	color: var(--light-color);
+	background-color: var(--accent-color);
+	font-weight: var(--bolt-font);
+	font-size: var(--secondary-font-size);
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	cursor: pointer;
+	text-align: center;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:hover,
+  &:focus {
+	background-color: var(--accent-color-hover);}
+	
+}
+
+.button__icon {
+	margin-left: 10px;
+	fill: var(--light-color);
+}

@@ -33,6 +33,11 @@
 					</li>
 				</ul>
 			</nav>
+			<botton type="botton" class="mobile-menu-open" data-menu-open>
+				<svg class="mobile-menu-open__icon" width="40" height="40">
+					<use href="./images/sprite/sprite.svg#menu-burg"></use>
+				</svg>
+			</botton>
 			<ul class="connection">
 				<li class="connection__item">
 					<a href="mailto:info@devstudio.com" class="connection__link">
@@ -52,15 +57,57 @@
 				</li>
 			</ul>
 		</div>
+		<div class="mobile-menu" data-menu>
+			<div class="container mobail-menu_container">
+				<button class="mobile-menu_close-btn" data-menu-close>
+					<svg class="mobile-menu_close-icon" width="40" height="40">
+						<use href="./images/sprite/sprite.svg#icon-Vector"></use>
+					</svg>
+				</button>
+				<ul>
+					<li>
+						<a href="">Студія</a>
+					</li>
+					<li>
+						<a href="">Портфоліо</a>
+					</li>
+					<li>
+						<a href="">Контакти</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="">+38 096 111 11 11</a>
+					</li>
+					<li>
+						<a href="">info@devstudio.com</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="">Instagram</a>
+					</li>
+					<li>
+						<a href="">Twitter</a>
+					</li>
+					<li>
+						<a href="">Facebook</a>
+					</li>
+					<li>
+						<a href="">LinkedIn</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</header>
 	<main>
 		<!--hero-->
-		<section class="hero">
+		<section class="hero none">
 			<h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
 			<button type="button" class=" hero__button" data-modal-open>Заказать услугу</button>
 		</section>
 		<!--benefits-->
-		<section class="section">
+		<section class="section none">
 			<div class="container">
 				<h2 class="visually--hidden">Наши преимущества</h2>
 				<!-- скрито в css -->
@@ -113,7 +160,7 @@
 			</div>
 		</section>
 		<!--services-->
-		<section class="section section__no-pading-top">
+		<section class="section section__no-pading-top none">
 			<div class="container">
 				<h2 class="section__title">Чем мы занимаемся</h2>
 				<ul class="services">
@@ -145,7 +192,7 @@
 			</div>
 		</section>
 		<!--team-->
-		<section class="section section__gray-background">
+		<section class="section section__gray-background none">
 			<div class="container">
 				<h2 class="section__title">Наша команда</h2>
 				<ul class="team">
@@ -305,7 +352,7 @@
 			</div>
 		</section>
 		<!-- clients -->
-		<section class="section">
+		<section class="section none">
 			<div class="container">
 				<h2 class="section__title">Постоянные клиенты</h2>
 				<ul class="clients">
@@ -356,7 +403,7 @@
 		</section>
 	</main>
 	<!--footer-->
-	<footer class="footer__background">
+	<footer class="footer__background none">
 		<div class="container footer">
 			<div class="contacts__group">
 				<a class="footer__logo" href="./index.html"><span class="footer__logo--accent">Web</span>Studio</a>
@@ -421,7 +468,7 @@
 		</div>
 	</footer>
 	<!-- modal win -->
-	<div class="backdrop is-hidden" data-modal>
+	<div class="backdrop is-hidden none" data-modal>
 		<div class="modal__close">
 			<button class="button__close" type="button" data-modal-close>
 				<svg class="close__cross-icon" width="18px" height="18px">
@@ -478,6 +525,7 @@
 			</form>
 		</div>
 	</div>
+	<script src="./js/mobaile-menu.js"></script>
 	<script src="./js/modal.js"></script>
 </body>
 

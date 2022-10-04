@@ -150,11 +150,16 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-
+ 
+  
   @media screen and (max-width: 391px) {
     font-size: 8px;
   }
 
+  @media screen and (max-width: 320px) {
+    font-size: 6px;
+  }
+  
   @media screen and (min-width: 391px) and (max-width: 766px) {
     font-size: 10px;
   }

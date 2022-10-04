@@ -1216,6 +1216,11 @@ p {
     font-size: 8px;
   }
 }
+@media screen and (max-width: 320px) {
+  .form__agree-text {
+    font-size: 6px;
+  }
+}
 @media screen and (min-width: 391px) and (max-width: 766px) {
   .form__agree-text {
     font-size: 10px;

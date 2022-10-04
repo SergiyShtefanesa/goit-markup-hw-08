@@ -54,6 +54,10 @@ p {
   margin-bottom: 0;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -104,20 +108,20 @@ p {
 
 .page-header {
   position: relative;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
   border-bottom: 1px solid #ececec;
 }
 @media screen and (min-width: 768px) {
   .page-header {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .page-header {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -252,7 +256,7 @@ p {
     line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
-    bottom: -1px;
+    display: block;
     position: relative;
   }
   .menu__link--current {
@@ -262,7 +266,7 @@ p {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -2px;
     display: block;
     width: 100%;
     height: 4px;
@@ -545,7 +549,12 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 766px) {
+  .benefits__achivements {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1023px) {
   .benefits__achivements {
     text-align: center;
   }
@@ -997,8 +1006,8 @@ p {
   z-index: 5;
   top: 50%;
   left: 50%;
-  width: 450px;
-  max-width: 100%;
+  width: calc(100% - 30px);
+  max-width: 450px;
   background: var(--light-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1202,10 +1211,21 @@ p {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 391px) {
+  .form__agree-text {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 391px) and (max-width: 766px) {
+  .form__agree-text {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 767px) {
   .form__agree-text {
     font-size: var(--primary-font-size);
     line-height: 1.71;
+    font-size: 12px;
   }
 }
 
@@ -1222,7 +1242,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 40px;
-  gap: 8px;
+  gap: 15px 8px;
 }
 @media screen and (max-width: 767px) {
   .filter {

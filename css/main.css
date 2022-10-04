@@ -1211,7 +1211,7 @@ p {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 380px) {
   .form__agree-text {
     font-size: 8px;
   }
